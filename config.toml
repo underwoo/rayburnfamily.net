@@ -1,3 +1,33 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://rayburnfamily.net"
+languageCode = "en-us"
+title = "The Rayburn Family"
+disableKinds = ["sitemap", "RSS"]
+theme = "hugo-webslides"
+tags = ["slide", "presentation", "responsive", "landing page"]
+features = ["webslides.js", "pre-made template", "shortcodes"]
+
+[params]
+  author = "Seth Underwood"
+  homepage = "underwoo.io"
+
+
+[params.webslides]
+  banner = false
+  slideshow = false
+  vertical = false
+  autoslide = false
+  changeOnClick = false
+  disableLoop = false
+  minWheelDelta = 40
+  disableNavigateOnScroll = true
+  scrollWait = 450
+  slideOffset = 50
+  hideIndex = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+    [markup.goldmark.renderer]
+      unsafe = true
